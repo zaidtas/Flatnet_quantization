@@ -47,7 +47,7 @@ opt = parser.parse_args()
 os.environ["CUDA_VISIBLE_DEVICES"] = str(opt.dev_id)
 device = torch.device("cuda")
 
-data = '/root/data/Amplitude Mask/models/' ##where do you want to save your saved model
+data = 'Data/Amplitude Mask/models/' ##where do you want to save your saved model
 savedir = os.path.join(data, opt.modelRoot)
 
 if not os.path.exists(savedir):
